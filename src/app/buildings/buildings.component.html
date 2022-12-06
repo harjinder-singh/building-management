@@ -1,0 +1,10 @@
+<div class="container">
+    <div *ngFor="let building of buildings" class="item" [routerLink]="['management', building.slug]">
+        <h2>Name: {{building.name}}</h2>
+        <h4>Address: {{building.address.street}}, 
+            {{building.address.city}},
+            {{building.address.province}},
+            {{building.address.country}}</h4>
+    
+    </div>
+</div>
